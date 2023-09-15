@@ -81,6 +81,8 @@ pip install -r requirements.txt
 
 Describe aquí cómo utilizar tu proyecto, por ejemplo, cómo ejecutarlo o cómo importar las bibliotecas en tu código.
 
+![Screenshot](eeg.png)
+
 ## Contribución
 
 Si desea contribuir a este proyecto, siga las pautas de contribución en el archivo CONTRIBUTING.md.
