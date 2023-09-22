@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import chart_studio.plotly as py
 
-User_frame = pd.read_csv("/home/thor/Descargas/Uni/10moSemestre/Investigacion/AURA_RAW___2023-09-11___11;31;44.csv",usecols=[*range(1, 9)], skiprows=0 , sep=',') 
+User_frame = pd.read_csv("AURA_RAW___2023-09-11___11;31;44.csv",usecols=[*range(2, 10)], skiprows=1 , sep=',') 
 data = User_frame.transpose().to_numpy()
 
 ch_names = [
