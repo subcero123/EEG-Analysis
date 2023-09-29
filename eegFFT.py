@@ -8,9 +8,9 @@ from matplotlib.pyplot import specgram
 
 
 
-data = pd.read_csv("AURA_FFT___2023-09-11___11;42;36.csv",usecols=[*range(1, 42)],  skiprows=2, sep=',', index_col=0) 
-data = data.transpose().to_numpy()
-
+data = pd.read_csv("Estimulo/AURA_FFT___2023-09-26___11;15;10.csv",usecols=[*range(1, 42)],  skiprows=2, sep=',', index_col=0) 
+data = data.to_numpy()
+"""
 ch_names = [
 'Delta_FP1 eeg', 'Delta_FP2 eeg', 'Delta_F3 eeg', 'Delta_F7 eeg','Delta_F4 eeg', 'Delta_F8 eeg', 'Delta_T7 eeg', 'Delta_T8 eeg', 
 'Theta_FP1 eeg', 'Theta_FP2 eeg', 'Theta_F3 eeg', 'Theta_F7 eeg', 'Theta_F4 eeg', 'Theta_F8 eeg', 'Theta_T7 eeg', 'Theta_T8 eeg', 
@@ -27,4 +27,4 @@ raw.plot()
 plt.show()
 """
 specgram(data.flatten(), NFFT=256, Fs=256)
-plt.show()"""
+plt.show()
