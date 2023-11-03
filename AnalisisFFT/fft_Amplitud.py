@@ -49,7 +49,7 @@ frequencies = np.fft.fftfreq(n, 1/sfreq)
 fft_values = np.fft.fft(filtered_data)
 
 
-
+"""
 # Visualizar la FFT de cada canal en una sola figura con zoom independiente
 fig, axs = plt.subplots(4, 2, figsize=(12, 8))
 axs = axs.ravel()
@@ -82,4 +82,4 @@ for i in range(len(filtered_data)):
 
 # Guardar el DataFrame como un archivo CSV
 output_file = os.path.splitext(os.path.basename(file_path))[0] + "_FFT.csv"
-fft_data.to_csv(output_file, index=False)"""
+fft_data.to_csv(output_file, index=False)
