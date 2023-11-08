@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import specgram
 
 
-data = pd.read_csv("NoEstimulo/AURA_RAW___2023-09-26___11;02;14.csv",usecols=[*range(1, 9)],  skiprows=2, sep=',') 
+data = pd.read_csv("NoEstimulo/AURA_RAW___2023-09-11___11;31;44.csv",usecols=[*range(1, 9)],  skiprows=2, sep=',') 
 data = data.transpose().to_numpy()
 
 ch_names = [

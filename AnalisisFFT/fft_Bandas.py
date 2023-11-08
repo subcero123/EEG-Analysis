@@ -5,7 +5,8 @@ import os
 # Leer los datos desde el archivo CSV
 file_path = "RAWNoEstimulo-2023-09-11-11:31:44.csv"
 data = pd.read_csv(file_path, usecols=[*range(1, 9)], skiprows=0, sep=',')
-data = data.transpose().to_numpy()
+data = data.to_numpy()
+print(data)
 
 # Frecuencia de muestreo
 sfreq = 256  # en Hertz

@@ -4,3 +4,4 @@ include/
 etc/
 bin/
 share/
+.venv/
