@@ -34,10 +34,10 @@ for i in range(8):
     col = i % 2
     ax = axs[row, col]
     for column in column_groups[i]:
-        ax.plot(df['Minutes'] + df['Seconds'] / 60, df[column], label=column)
+        ax.plot(df['Minutes'] * 60 + df['Seconds'] , df[column], label=column)
     ax.set_title(titles[i])
     ax.legend(loc='best')
-    ax.set_xlabel("Tiempo (minutos)")
+    ax.set_xlabel("Tiempo (segundos)")
     ax.set_ylabel("Valor")
     ax.grid(True)
 
